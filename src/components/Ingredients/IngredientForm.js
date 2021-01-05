@@ -9,7 +9,7 @@ const [enteredAmount, setEnteredAmount] = useState('');
 
   const submitHandler = event => {
     event.preventDefault();
-    // ...
+    props.onAddIngredient({title: enteredTitle, amount: enteredAmount});
   };
 
   return (
